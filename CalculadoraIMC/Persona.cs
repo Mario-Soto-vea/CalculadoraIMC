@@ -14,6 +14,11 @@ namespace CalculadoraIMC
         public float Estatura{ get; set; }
         public float Peso { get; set; }
 
+        public void CalcularIMC()
+        {
+            var imc = Peso / (Estatura*Estatura);
+            Console.WriteLine($"El IMC de {Nombre} es {imc}");
+        }
 
     }
 }
